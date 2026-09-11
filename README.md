@@ -92,9 +92,6 @@ This is a static site with no build step or dependencies.
 
 No installation, package manager, or server-side setup is required.
 
-
-*(Replace this placeholder with your Netlify or GitHub Pages URL after deployment.)*
-
 ## Author
 
 **Jinesh Prajapati**
