@@ -1,0 +1,161 @@
+/* =========================================================
+   NovaFlow — responsive.css
+   Breakpoints tested: 320 / 375 / 425 / 768 / 1024 / 1280 / 1440
+   ========================================================= */
+
+/* ---------- Large desktop refinement (1440px+) ---------- */
+@media (min-width: 1440px) {
+  .container { max-width: 1280px; }
+}
+
+/* ---------- Laptop / small desktop (up to 1279px) ---------- */
+@media (max-width: 1279px) {
+  .hero-inner { gap: var(--space-7); }
+  .features-grid { gap: var(--space-4); }
+}
+
+/* ---------- Tablet landscape (up to 1024px) ---------- */
+@media (max-width: 1024px) {
+  :root { --space-9: 72px; }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-copy { max-width: 620px; margin: 0 auto; }
+  .hero-subtitle { margin-left: auto; margin-right: auto; }
+  .hero-ctas { justify-content: center; }
+  .hero-visual { margin-top: var(--space-7); }
+  .dashboard-mock { transform: none; animation: none; }
+
+  .showcase-inner { grid-template-columns: 1fr; }
+  .showcase-visual { order: -1; }
+
+  .benefits-inner { grid-template-columns: 1fr; }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-brand { grid-column: 1 / -1; margin-bottom: var(--space-4); }
+}
+
+/* ---------- Tablet portrait (up to 900px) ---------- */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-timeline {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .step-connector {
+    width: 2px;
+    height: 32px;
+    margin: 0 auto;
+    background: repeating-linear-gradient(to bottom, var(--color-border) 0 6px, transparent 6px 12px);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .price-card-featured { transform: none; order: -1; }
+  .price-card-featured:hover { transform: translateY(-4px); }
+}
+
+/* ---------- Mobile navigation switch (up to 860px) ---------- */
+@media (max-width: 860px) {
+  .main-nav { display: none; }
+  .header-actions .btn { display: none; }
+  .hamburger { display: flex; }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-bg);
+    padding: var(--space-6) var(--space-5);
+    overflow-y: auto;
+    z-index: 400;
+  }
+  .mobile-nav[hidden] { display: none; }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+  }
+  .mobile-nav-link {
+    display: block;
+    padding: var(--space-4);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .mobile-nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}
+
+/* ---------- Mobile (up to 767px) ---------- */
+@media (max-width: 767px) {
+  :root {
+    --space-8: 40px;
+    --space-9: 56px;
+  }
+
+  .container { padding: 0 var(--space-4); }
+
+  .hero { padding: var(--space-7) 0 var(--space-6); }
+  .hero-title { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .hero-subtitle { font-size: 1.02rem; }
+  .hero-ctas { flex-direction: column; width: 100%; }
+  .hero-ctas .btn { width: 100%; }
+
+  .dashboard-mock { padding: var(--space-4); }
+  .dashboard-body { grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .floating-chip { display: none; }
+
+  .trust-logos { gap: var(--space-5); }
+  .trust-logos span { font-size: 1rem; }
+
+  .features-grid { grid-template-columns: 1fr; }
+
+  .showcase-copy .btn { width: 100%; }
+
+  .benefits-grid { grid-template-columns: 1fr; }
+
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+
+  .back-to-top { bottom: 18px; right: 18px; width: 42px; height: 42px; }
+}
+
+/* ---------- Small mobile (up to 425px) ---------- */
+@media (max-width: 425px) {
+  .section-heading { margin-bottom: var(--space-6); }
+  .section-heading h2 { font-size: 1.6rem; }
+
+  .dashboard-body { grid-template-columns: 1fr; }
+
+  .footer-top { grid-template-columns: 1fr; }
+
+  .price-amount { font-size: 2rem; }
+}
+
+/* ---------- Extra small mobile (down to 320px) ---------- */
+@media (max-width: 340px) {
+  .badge { font-size: 0.78rem; padding: 6px 12px; }
+  .brand-name { font-size: 1.1rem; }
+  .btn { padding: 12px 20px; font-size: 0.9rem; }
+  .hero-title { font-size: 1.8rem; }
+}

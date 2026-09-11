@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaFlow — Turn Ideas Into Progress</title>
+  <meta name="description" content="NovaFlow is a modern productivity platform concept designed to help teams manage projects, tasks and collaboration." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NovaFlow — Turn Ideas Into Progress" />
+  <meta property="og:description" content="NovaFlow is a modern productivity platform concept designed to help teams manage projects, tasks and collaboration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NovaFlow" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts: Space Grotesk (display) + Inter (body) + JetBrains Mono (data/utility) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="NovaFlow home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 20L11 6L17 16L24 4" stroke="url(#brandGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="brandGrad" x1="4" y1="4" x2="24" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5B5FEF"/>
+                <stop offset="1" stop-color="#2FD5C4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">NovaFlow</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">Solutions</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#faq" class="nav-link">Resources</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-ghost">Log in</a>
+        <a href="#pricing" class="btn btn-primary">Get Started</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav panel -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#product" class="mobile-nav-link">Product</a></li>
+        <li><a href="#features" class="mobile-nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="mobile-nav-link">Solutions</a></li>
+        <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Resources</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="#" class="btn btn-ghost btn-block">Log in</a>
+        <a href="#pricing" class="btn btn-primary btn-block">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            AI-powered productivity
+          </span>
+          <h1 class="hero-title">Turn ideas into <span class="text-gradient">progress.</span></h1>
+          <p class="hero-subtitle">NovaFlow brings tasks, projects and team collaboration together in one simple workspace.</p>
+          <div class="hero-ctas">
+            <a href="#pricing" class="btn btn-primary btn-lg">Start Free</a>
+            <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
+          </div>
+          <p class="hero-note">No credit card required</p>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="dashboard-mock" id="dashboard-mock">
+            <div class="dashboard-mock-top">
+              <div class="dashboard-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="dashboard-title">NovaFlow · Workspace</span>
+            </div>
+
+            <div class="dashboard-body">
+              <div class="dm-card dm-progress">
+                <div class="dm-card-head">
+                  <span>Project progress</span>
+                  <span class="dm-tag">On track</span>
+                </div>
+                <div class="dm-ring-row">
+                  <svg class="dm-ring" viewBox="0 0 64 64">
+                    <circle cx="32" cy="32" r="27" class="dm-ring-track"/>
+                    <circle cx="32" cy="32" r="27" class="dm-ring-fill"/>
+                  </svg>
+                  <div class="dm-ring-label">
+                    <strong>72%</strong>
+                    <span>Complete</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dm-card dm-tasks">
+                <div class="dm-card-head"><span>Task list</span></div>
+                <ul class="dm-task-list">
+                  <li><span class="dm-check checked"></span> Design system audit</li>
+                  <li><span class="dm-check checked"></span> Sprint planning</li>
+                  <li><span class="dm-check"></span> Client review call</li>
+                  <li><span class="dm-check"></span> Launch checklist</li>
+                </ul>
+              </div>
+
+              <div class="dm-card dm-team">
+                <div class="dm-card-head"><span>Team members</span></div>
+                <div class="dm-avatars">
+                  <span class="dm-avatar" style="--c:#5B5FEF">AR</span>
+                  <span class="dm-avatar" style="--c:#2FD5C4">MJ</span>
+                  <span class="dm-avatar" style="--c:#FFA45B">SK</span>
+                  <span class="dm-avatar dm-avatar-more">+4</span>
+                </div>
+              </div>
+
+              <div class="dm-card dm-stats">
+                <div class="dm-card-head"><span>Productivity overview</span></div>
+                <div class="dm-bars">
+                  <span style="--h:40%"></span>
+                  <span style="--h:65%"></span>
+                  <span style="--h:50%"></span>
+                  <span style="--h:85%"></span>
+                  <span style="--h:60%"></span>
+                  <span style="--h:95%"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-flow-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="floating-chip chip-one">
+            <span class="chip-icon">✓</span>
+            <div>
+              <strong>Task completed</strong>
+              <span>Sprint 12 · Frontend</span>
+            </div>
+          </div>
+          <div class="floating-chip chip-two">
+            <span class="chip-icon">📈</span>
+            <div>
+              <strong>+24% velocity</strong>
+              <span>This week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST / SOCIAL PROOF ============ -->
+    <section class="trust-section reveal">
+      <div class="container">
+        <p class="trust-label">Built for modern teams</p>
+        <div class="trust-logos" role="list" aria-label="Example teams shown for demo purposes only">
+          <span role="listitem">Orbit</span>
+          <span role="listitem">Vertex</span>
+          <span role="listitem">Lumio</span>
+          <span role="listitem">Northstar</span>
+          <span role="listitem">PixelWorks</span>
+        </div>
+        <p class="trust-disclaimer">Names shown are fictional demo content, not real customers.</p>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything your team needs to move faster</h2>
+          <p>A focused toolkit that keeps planning, doing and reviewing work in one place.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Smart Task Management</h3>
+            <p>Create, assign and prioritize tasks with intelligent suggestions that keep work moving.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="4" width="7" height="16" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="3" y="15" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Project Planning</h3>
+            <p>Lay out timelines, milestones and dependencies so every project has a clear path forward.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.5-3.5 3-5.5 5.5-5.5s5 2 5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14.5 20c.4-2.6 2-4.2 4-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Team Collaboration</h3>
+            <p>Comment, share files and stay in sync with teammates without leaving your workspace.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 20V10M10 20V4M17 20v-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Progress Tracking</h3>
+            <p>Visual dashboards show exactly where every project stands, updated in real time.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Automated Workflows</h3>
+            <p>Set rules once and let repetitive steps run themselves, from routing to reminders.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4v16h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 15l3-4 3 2 4-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Productivity Insights</h3>
+            <p>Understand where time actually goes with reports that highlight what to improve next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT SHOWCASE ============ -->
+    <section class="showcase-section" id="product">
+      <div class="container showcase-inner">
+        <div class="showcase-copy reveal">
+          <span class="eyebrow">Product</span>
+          <h2>One workspace. Complete visibility.</h2>
+          <p>Manage every project from a single dashboard instead of switching between scattered tools and spreadsheets.</p>
+          <ul class="check-list">
+            <li><span class="check-icon">✓</span> Organize tasks</li>
+            <li><span class="check-icon">✓</span> Track deadlines</li>
+            <li><span class="check-icon">✓</span> Monitor progress</li>
+            <li><span class="check-icon">✓</span> Collaborate with your team</li>
+          </ul>
+          <a href="#pricing" class="btn btn-primary">Start Free</a>
+        </div>
+
+        <div class="showcase-visual reveal" aria-hidden="true">
+          <div class="showcase-mock">
+            <div class="sm-header">
+              <span class="sm-title">Product Roadmap</span>
+              <span class="sm-pill">Q3 · Active</span>
+            </div>
+            <div class="sm-rows">
+              <div class="sm-row">
+                <span class="sm-row-label">Design</span>
+                <div class="sm-track"><span class="sm-fill" style="--w:90%"></span></div>
+              </div>
+              <div class="sm-row">
+                <span class="sm-row-label">Development</span>
+                <div class="sm-track"><span class="sm-fill" style="--w:65%"></span></div>
+              </div>
+              <div class="sm-row">
+                <span class="sm-row-label">Testing</span>
+                <div class="sm-track"><span class="sm-fill" style="--w:40%"></span></div>
+              </div>
+              <div class="sm-row">
+                <span class="sm-row-label">Launch prep</span>
+                <div class="sm-track"><span class="sm-fill" style="--w:20%"></span></div>
+              </div>
+            </div>
+            <div class="sm-footer">
+              <div class="sm-stat">
+                <strong>18</strong>
+                <span>Active tasks</span>
+              </div>
+              <div class="sm-stat">
+                <strong>6</strong>
+                <span>Team members</span>
+              </div>
+              <div class="sm-stat">
+                <strong>3</strong>
+                <span>Days to deadline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="steps-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Solutions</span>
+          <h2>Get started in three simple steps</h2>
+        </div>
+
+        <div class="steps-timeline">
+          <div class="step-card reveal">
+            <span class="step-number">01</span>
+            <h3>Create your workspace</h3>
+            <p>Set up a workspace for your team in under a minute, no complex configuration required.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step-card reveal">
+            <span class="step-number">02</span>
+            <h3>Plan your projects</h3>
+            <p>Break work into projects and tasks, then set timelines your whole team can follow.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step-card reveal">
+            <span class="step-number">03</span>
+            <h3>Track your progress</h3>
+            <p>Watch progress update automatically as your team completes work in real time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENEFITS ============ -->
+    <section class="benefits-section">
+      <div class="container benefits-inner">
+        <div class="benefits-visual reveal" aria-hidden="true">
+          <div class="benefit-mock">
+            <div class="bm-top">
+              <span>Weekly focus</span>
+              <span class="bm-pill">Balanced</span>
+            </div>
+            <div class="bm-donut">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" class="bm-donut-track" />
+                <circle cx="60" cy="60" r="50" class="bm-donut-seg bm-seg-1" />
+                <circle cx="60" cy="60" r="50" class="bm-donut-seg bm-seg-2" />
+              </svg>
+              <div class="bm-donut-label">
+                <strong>4.5h</strong>
+                <span>Deep work / day</span>
+              </div>
+            </div>
+            <div class="bm-legend">
+              <span><i style="background:#5B5FEF"></i>Deep work</span>
+              <span><i style="background:#2FD5C4"></i>Meetings</span>
+              <span><i style="background:#E5E7F2"></i>Admin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-copy reveal">
+          <span class="eyebrow">Why NovaFlow</span>
+          <h2>Less busywork. More meaningful progress.</h2>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <h3>Simple workflows</h3>
+              <p>Set up processes once and let NovaFlow handle the repetitive parts.</p>
+            </div>
+            <div class="benefit-item">
+              <h3>Clear project visibility</h3>
+              <p>Always know what's on track, what's at risk and what's next.</p>
+            </div>
+            <div class="benefit-item">
+              <h3>Faster collaboration</h3>
+              <p>Keep discussion attached to the work itself, not scattered in chats.</p>
+            </div>
+            <div class="benefit-item">
+              <h3>Better organization</h3>
+              <p>One structure for tasks, files and timelines across every project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple pricing for every team size</h2>
+          <p>Fictional pricing shown for demo purposes only — no real payment is processed.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card reveal">
+            <h3 class="price-name">Starter</h3>
+            <p class="price-desc">For individuals</p>
+            <p class="price-amount">$0<span>/month</span></p>
+            <ul class="price-features">
+              <li>Up to 3 projects</li>
+              <li>Basic task management</li>
+              <li>1 workspace member</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#" class="btn btn-secondary btn-block">Start Free</a>
+          </div>
+
+          <div class="price-card price-card-featured reveal">
+            <span class="price-badge">Most popular</span>
+            <h3 class="price-name">Pro</h3>
+            <p class="price-desc">For growing teams</p>
+            <p class="price-amount">$12<span>/month</span></p>
+            <ul class="price-features">
+              <li>Unlimited projects</li>
+              <li>Automated workflows</li>
+              <li>Up to 20 members</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Choose Pro</a>
+          </div>
+
+          <div class="price-card reveal">
+            <h3 class="price-name">Business</h3>
+            <p class="price-desc">For larger teams</p>
+            <p class="price-amount">$29<span>/month</span></p>
+            <ul class="price-features">
+              <li>Advanced permissions</li>
+              <li>Productivity insights</li>
+              <li>Unlimited members</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a href="#" class="btn btn-secondary btn-block">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" aria-expanded="false">
+                What is NovaFlow?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-answer">
+              <p>NovaFlow is a concept productivity platform that brings tasks, projects and team collaboration into one workspace. It's a demo product built for this frontend project.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" aria-expanded="false">
+                Is NovaFlow free?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-answer">
+              <p>The Starter plan shown here is free for individuals, with Pro and Business tiers for growing teams. All pricing on this page is fictional demo content.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" aria-expanded="false">
+                Can I use NovaFlow with my team?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-answer">
+              <p>Yes — the design includes shared workspaces, task assignment and collaboration features for teams of any size.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" aria-expanded="false">
+                Do I need a credit card to start?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-answer">
+              <p>No credit card is required to start on the Starter plan in this concept design.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button class="faq-question" aria-expanded="false">
+                Can I cancel anytime?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-answer">
+              <p>In this concept, plans are designed to be flexible with no long-term lock-in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final-cta">
+      <div class="final-cta-glow" aria-hidden="true"></div>
+      <div class="container final-cta-inner reveal">
+        <h2>Ready to make your workflow simpler?</h2>
+        <p>Bring your projects, tasks and team together with NovaFlow.</p>
+        <a href="#pricing" class="btn btn-primary btn-lg">Get Started Free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="NovaFlow home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20L11 6L17 16L24 4" stroke="url(#brandGrad2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="brandGrad2" x1="4" y1="4" x2="24" y2="20" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#8C90FF"/>
+                  <stop offset="1" stop-color="#2FD5C4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-name">NovaFlow</span>
+        </a>
+        <p>A concept productivity workspace for modern teams. Built as a frontend showcase project.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="NovaFlow on X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 3l18 18M21 3L3 21" stroke="currentColor" stroke-width="0" /><path d="M18.9 3H21.6L15.3 10.2 22.7 21H16.9L12.3 14.6 7 21H4.3l6.7-7.7L3.6 3H9.5L13.7 8.9 18.9 3Z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="NovaFlow on LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 8h4V23h-4V8Zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05C19.9 8 21 10.24 21 13.86V23h-4v-8.13c0-1.94-.03-4.44-2.71-4.44-2.71 0-3.13 2.12-3.13 4.3V23H7V8Z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="NovaFlow on GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.02c-3.16.69-3.83-1.52-3.83-1.52-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#product">Integrations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NovaFlow. Demo project created for educational purposes.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
